@@ -13,7 +13,7 @@ body {
 .card {
     padding: 10px;
     margin: 10px;
-    /* border: solid blue; */
+
 }
 
 img {
@@ -22,7 +22,6 @@ img {
 
 .card-container {
     display: flex;
-    /* border:solid #F05D5E; */
     flex-flow: row wrap;
 }
 
@@ -32,4 +31,41 @@ h1 {
 
 p {
     font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 400px) {
+
+    .ipsum {
+        display: "none";
+        font-size: 0.01rem;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    h1 {
+        font-size: 3.0rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(9, 0, 0);
+        color: white;
+    }
 }
