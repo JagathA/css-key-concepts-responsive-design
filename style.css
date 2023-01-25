@@ -13,8 +13,14 @@ body {
 .card {
     padding: 10px;
     margin: 10px;
+    /* border: solid blue; */
 }
 
 img {
     width: 250px;
+}
+.card-container{
+    display:flex;
+    /* border:solid #F05D5E; */
+    flex-flow: row wrap;
 }
